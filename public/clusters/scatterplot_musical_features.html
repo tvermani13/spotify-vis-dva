@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scatterplot of Clusters and Musical Features</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #333;
+        shape-rendering: crispEdges;
+      }
+
+      .axis text {
+        font-size: 12px;
+        fill: #fff;
+      }
+
+      .point {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .label {
+        font-size: 8px;
+        fill: #fff;
+        pointer-events: none;
+      }
+
+      .legend rect {
+        width: 12px;
+        height: 12px;
+      }
+
+      .legend text {
+        font-size: 12px;
+        alignment-baseline: middle;
+        fill: #fff;
+      }
+
+      .tooltip {
+        position: absolute;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 8px;
+        font-size: 12px;
+        pointer-events: none;
+        opacity: 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg id="chart"></svg>
+    <script>
+      Promise.all([
+        d3.csv("clusters_and_coordinates.csv", (d) => ({
+          country: d.country,
+          x: +d.x,
+          y: +d.y,
+          cluster: +d.cluster,
+        })),
+        d3.csv("clustered_countries.csv"),
+      ])
+        .then(([coords, stats]) => {
+          const statsMap = new Map(stats.map((d) => [d.Country, d]));
+          coords.forEach((d) => (d.stats = statsMap.get(d.country) || {}));
+
+          const margin = { top: 40, right: 150, bottom: 50, left: 60 };
+          const width = 900 - margin.left - margin.right;
+          const height = 600 - margin.top - margin.bottom;
+          const svg = d3
+            .select("#chart")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+          const xScale = d3
+            .scaleLinear()
+            .domain(
+              d3
+                .extent(coords, (d) => d.x)
+                .map((v, i) => (i === 0 ? v - 0.5 : v + 0.5))
+            )
+            .range([0, width]);
+          const yScale = d3
+            .scaleLinear()
+            .domain(
+              d3
+                .extent(coords, (d) => d.y)
+                .map((v, i) => (i === 0 ? v - 0.5 : v + 0.5))
+            )
+            .range([height, 0]);
+
+          svg
+            .append("g")
+            .attr("class", "axis")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(xScale))
+            .append("text")
+            .attr("x", width / 2)
+            .attr("y", 40)
+            .attr("fill", "#000")
+            .attr("text-anchor", "middle")
+            .text("UMAP Dimension 1");
+
+          svg
+            .append("g")
+            .attr("class", "axis")
+            .call(d3.axisLeft(yScale))
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", -45)
+            .attr("fill", "#000")
+            .attr("text-anchor", "middle")
+            .text("UMAP Dimension 2");
+
+          svg
+            .append("text")
+            .attr("x", width / 2)
+            .attr("y", -15)
+            .attr("text-anchor", "middle")
+            .style("font-size", "16px")
+            .style("font-weight", "bold")
+            .text("Scatterplot of Clusters and Musical Features");
+
+          const clusters = Array.from(
+            new Set(coords.map((d) => d.cluster))
+          ).sort();
+          const color = d3
+            .scaleOrdinal()
+            .domain(clusters)
+            .range(d3.schemeCategory10);
+
+          const tooltip = d3
+            .select("body")
+            .append("div")
+            .attr("class", "tooltip");
+
+          svg
+            .selectAll(".point")
+            .data(coords)
+            .join("circle")
+            .attr("class", "point")
+            .attr("r", 5)
+            .attr("cx", (d) => xScale(d.x))
+            .attr("cy", (d) => yScale(d.y))
+            .attr("fill", (d) => color(d.cluster))
+            .on("mouseover", (event, d) => {
+              const s = d.stats;
+              tooltip
+                .html(
+                  `
+                        <strong>${d.country}</strong><br>
+                        
+                        Top Features: ${s.top_features || "N/A"}<br>
+                        
+                    `
+                )
+                .style("left", event.pageX + 10 + "px")
+                .style("top", event.pageY + 10 + "px")
+                .transition()
+                .duration(100)
+                .style("opacity", 1);
+            })
+            .on("mousemove", (event) => {
+              tooltip
+                .style("left", event.pageX + 10 + "px")
+                .style("top", event.pageY + 10 + "px");
+            })
+            .on("mouseout", () => {
+              tooltip.transition().duration(100).style("opacity", 0);
+            });
+
+          svg
+            .selectAll(".label")
+            .data(coords)
+            .join("text")
+            .attr("class", "label")
+            .attr("x", (d) => xScale(d.x) + 6)
+            .attr("y", (d) => yScale(d.y) - 2)
+            .text((d) => d.country);
+
+          const legend = svg
+            .append("g")
+            .attr("class", "legend")
+            .attr("transform", `translate(${width + 20},20)`);
+
+          legend
+            .selectAll("g")
+            .data(clusters)
+            .join("g")
+            .attr("transform", (d, i) => `translate(0,${i * 20})`)
+            .call((g) => {
+              g.append("rect")
+                .attr("x", 0)
+                .attr("y", -8)
+                .attr("fill", (d) => color(d));
+              g.append("text")
+                .attr("x", 18)
+                .attr("y", 0)
+                .text((d) => `Cluster ${d}`);
+            });
+        })
+        .catch((err) => console.error("Loading error:", err));
+    </script>
+  </body>
+</html>
