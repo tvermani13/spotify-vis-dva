@@ -19,9 +19,12 @@ export default function Header() {
   return (
     <header className="border-b border-gray-800 bg-gray-900">
       <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
-        <h1 className="text-2xl font-bold text-white">
-          Spotify Data Visualization
-        </h1>
+        <div className="flex items-center">
+          <img src="/logo.ico" alt="Logo" className="w-8 h-8 mr-4" />
+          <h1 className="text-2xl font-bold text-white">
+            Spotify Data Visualization
+          </h1>
+        </div>
         <nav className="mt-4 md:mt-0 space-x-4">
           {navItems.map(([href, label]) => {
             const isActive = pathname === href;

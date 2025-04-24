@@ -1,70 +1,71 @@
 country_code,Country,top_features,num_songs,PC1_variance,cluster
-ZA,South Africa,"['liveness', 'tempo', 'key', 'mode', 'energy', 'danceability', 'acousticness']",25429,0.1623614152072691,0
-VN,Vietnam,"['time_signature', 'key', 'speechiness', 'liveness', 'tempo', 'valence', 'danceability']",24906,0.176936864318473,3
-VE,Venezuela,"['is_explicit', 'liveness', 'tempo', 'mode', 'valence', 'speechiness', 'time_signature']",24762,0.191492088604297,0
-UY,Uruguay,"['mode', 'tempo', 'speechiness', 'duration_ms', 'liveness', 'is_explicit', 'key']",24902,0.1902509767761144,4
-UA,Ukraine,"['instrumentalness', 'key', 'liveness', 'duration_ms', 'valence', 'time_signature', 'is_explicit']",25314,0.1613914274615342,3
-TR,Turkey,"['liveness', 'key', 'instrumentalness', 'valence', 'tempo', 'duration_ms', 'danceability']",25608,0.137419643048483,3
-TH,Thailand,"['time_signature', 'valence', 'tempo', 'liveness', 'key', 'mode', 'is_explicit']",25661,0.2117097892520219,2
-SV,El Salvador,"['key', 'duration_ms', 'tempo', 'daily_rank', 'acousticness', 'liveness', 'valence']",25660,0.1859754882525995,3
-SK,Slovakia,"['key', 'instrumentalness', 'valence', 'danceability', 'time_signature', 'mode', 'tempo']",25623,0.1427033758307479,2
-SG,Singapore,"['time_signature', 'is_explicit', 'tempo', 'liveness', 'duration_ms', 'key', 'danceability']",25581,0.2096408680951276,3
-SE,Sweden,"['tempo', 'is_explicit', 'key', 'speechiness', 'mode', 'time_signature', 'daily_rank']",25514,0.1942382377109255,0
-SA,Saudi Arabia,"['is_explicit', 'duration_ms', 'mode', 'speechiness', 'time_signature', 'danceability', 'acousticness']",25467,0.1722937233638735,1
-RO,Romania,"['acousticness', 'danceability', 'duration_ms', 'key', 'liveness', 'time_signature', 'speechiness']",25566,0.1601703353704104,1
-PY,Paraguay,"['speechiness', 'tempo', 'liveness', 'is_explicit', 'valence', 'danceability', 'acousticness']",25453,0.1791079172811924,4
-PT,Portugal,"['key', 'mode', 'acousticness', 'duration_ms', 'danceability', 'liveness', 'energy']",25653,0.1472162851573406,0
-PL,Poland,"['tempo', 'valence', 'key', 'duration_ms', 'danceability', 'mode', 'weekly_movement']",25664,0.1448465537344576,2
-PK,Pakistan,"['liveness', 'time_signature', 'tempo', 'key', 'is_explicit', 'mode', 'duration_ms']",25659,0.1844727802614844,3
-PH,Philippines,"['liveness', 'time_signature', 'instrumentalness', 'tempo', 'speechiness', 'is_explicit', 'key']",25654,0.1856883496840381,0
-PE,Peru,"['tempo', 'speechiness', 'mode', 'liveness', 'key', 'duration_ms', 'is_explicit']",25554,0.1935297617614967,4
-PA,Panama,"['is_explicit', 'key', 'time_signature', 'duration_ms', 'acousticness', 'mode', 'valence']",25657,0.1836336884868636,1
-NZ,New Zealand,"['duration_ms', 'is_explicit', 'speechiness', 'time_signature', 'danceability', 'valence', 'key']",25239,0.1733349152393734,1
-NO,Norway,"['time_signature', 'instrumentalness', 'is_explicit', 'liveness', 'key', 'mode', 'loudness']",25462,0.2061669872207398,2
-NL,Netherlands,"['speechiness', 'duration_ms', 'is_explicit', 'key', 'liveness', 'time_signature', 'danceability']",25415,0.1645216690483514,1
-NI,Nicaragua,"['key', 'speechiness', 'acousticness', 'daily_rank', 'tempo', 'time_signature', 'liveness']",25669,0.1757931214920664,4
+ZA,South Africa,"['liveness', 'tempo', 'key', 'mode', 'energy', 'danceability', 'acousticness']",25429,0.1623614152072692,0
+VN,Vietnam,"['time_signature', 'key', 'speechiness', 'liveness', 'tempo', 'valence', 'danceability']",24906,0.176936864318473,1
+VE,Venezuela,"['is_explicit', 'liveness', 'tempo', 'mode', 'valence', 'speechiness', 'time_signature']",24762,0.1914920886042972,1
+UY,Uruguay,"['mode', 'tempo', 'speechiness', 'duration_ms', 'liveness', 'is_explicit', 'key']",24902,0.1902509767761141,4
+US,United States of America,"['valence', 'instrumentalness', 'liveness', 'duration_ms', 'acousticness', 'is_explicit', 'speechiness']",25258,0.1786146582194177,2
+UA,Ukraine,"['instrumentalness', 'key', 'liveness', 'duration_ms', 'valence', 'time_signature', 'is_explicit']",25314,0.1613914274615343,0
+TR,Turkey,"['liveness', 'key', 'instrumentalness', 'valence', 'tempo', 'duration_ms', 'danceability']",25608,0.1374196430484832,0
+TH,Thailand,"['time_signature', 'valence', 'tempo', 'liveness', 'key', 'mode', 'is_explicit']",25661,0.2117097892520222,3
+SV,El Salvador,"['key', 'duration_ms', 'tempo', 'daily_rank', 'acousticness', 'liveness', 'valence']",25660,0.1859754882525993,4
+SK,Slovakia,"['key', 'instrumentalness', 'valence', 'danceability', 'time_signature', 'mode', 'tempo']",25623,0.1427033758307477,3
+SG,Singapore,"['time_signature', 'is_explicit', 'tempo', 'liveness', 'duration_ms', 'key', 'danceability']",25581,0.2096408680951276,0
+SE,Sweden,"['tempo', 'is_explicit', 'key', 'speechiness', 'mode', 'time_signature', 'daily_rank']",25514,0.1942382377109255,1
+SA,Saudi Arabia,"['is_explicit', 'duration_ms', 'mode', 'speechiness', 'time_signature', 'danceability', 'acousticness']",25467,0.1722937233638736,2
+RO,Romania,"['acousticness', 'danceability', 'duration_ms', 'key', 'liveness', 'time_signature', 'speechiness']",25566,0.1601703353704102,2
+PY,Paraguay,"['speechiness', 'tempo', 'liveness', 'is_explicit', 'valence', 'danceability', 'acousticness']",25453,0.1791079172811921,4
+PT,Portugal,"['key', 'mode', 'acousticness', 'duration_ms', 'danceability', 'liveness', 'energy']",25653,0.1472162851573403,0
+PL,Poland,"['tempo', 'valence', 'key', 'duration_ms', 'danceability', 'mode', 'weekly_movement']",25664,0.1448465537344578,0
+PK,Pakistan,"['liveness', 'time_signature', 'tempo', 'key', 'is_explicit', 'mode', 'duration_ms']",25659,0.184472780261484,0
+PH,Philippines,"['liveness', 'time_signature', 'instrumentalness', 'tempo', 'speechiness', 'is_explicit', 'key']",25654,0.1856883496840381,1
+PE,Peru,"['tempo', 'speechiness', 'mode', 'liveness', 'key', 'duration_ms', 'is_explicit']",25554,0.1935297617614969,4
+PA,Panama,"['is_explicit', 'key', 'time_signature', 'duration_ms', 'acousticness', 'mode', 'valence']",25657,0.1836336884868635,0
+NZ,New Zealand,"['duration_ms', 'is_explicit', 'speechiness', 'time_signature', 'danceability', 'valence', 'key']",25239,0.1733349152393734,2
+NO,Norway,"['time_signature', 'instrumentalness', 'is_explicit', 'liveness', 'key', 'mode', 'loudness']",25462,0.2061669872207398,3
+NL,Netherlands,"['speechiness', 'duration_ms', 'is_explicit', 'key', 'liveness', 'time_signature', 'danceability']",25415,0.1645216690483514,2
+NI,Nicaragua,"['key', 'speechiness', 'acousticness', 'daily_rank', 'tempo', 'time_signature', 'liveness']",25669,0.1757931214920665,1
 NG,Nigeria,"['danceability', 'duration_ms', 'acousticness', 'loudness', 'liveness', 'is_explicit', 'tempo']",25559,0.1360235886304656,0
-MY,Malaysia,"['time_signature', 'key', 'tempo', 'liveness', 'is_explicit', 'speechiness', 'instrumentalness']",25655,0.2138909423476263,0
-MX,Mexico,"['tempo', 'speechiness', 'acousticness', 'key', 'mode', 'is_explicit', 'weekly_movement']",25606,0.1771451717369553,4
-MA,Morocco,"['speechiness', 'time_signature', 'tempo', 'liveness', 'danceability', 'key', 'weekly_movement']",25405,0.1390429249505989,3
-LV,Latvia,"['speechiness', 'is_explicit', 'danceability', 'time_signature', 'liveness', 'instrumentalness', 'duration_ms']",25412,0.1543559382866411,1
-LU,Luxembourg,"['duration_ms', 'speechiness', 'time_signature', 'is_explicit', 'danceability', 'liveness', 'daily_rank']",24840,0.1602094257493272,1
-LT,Lithuania,"['time_signature', 'liveness', 'is_explicit', 'key', 'mode', 'speechiness', 'duration_ms']",25461,0.1491255837979331,1
-KZ,Kazakhstan,"['duration_ms', 'mode', 'instrumentalness', 'is_explicit', 'liveness', 'speechiness', 'time_signature']",25660,0.1545706345144936,1
-KR,"Korea, Republic of (South Korea)","['is_explicit', 'tempo', 'key', 'instrumentalness', 'time_signature', 'weekly_movement', 'mode']",25586,0.2131151339803616,2
-JP,Japan,"['instrumentalness', 'tempo', 'key', 'liveness', 'time_signature', 'mode', 'acousticness']",25638,0.1463370762291967,0
-IT,Italy,"['valence', 'mode', 'instrumentalness', 'acousticness', 'tempo', 'key', 'is_explicit']",25670,0.156807777558155,2
-IS,Iceland,"['key', 'time_signature', 'liveness', 'tempo', 'instrumentalness', 'danceability', 'speechiness']",25420,0.2093500757423025,3
-IN,India,"['key', 'time_signature', 'mode', 'instrumentalness', 'liveness', 'is_explicit', 'danceability']",25406,0.1860088885543683,2
-IL,Israel,"['instrumentalness', 'loudness', 'tempo', 'time_signature', 'liveness', 'key', 'is_explicit']",25616,0.1763178265897333,2
-IE,Ireland,"['is_explicit', 'time_signature', 'speechiness', 'danceability', 'liveness', 'daily_rank', 'mode']",25409,0.1838436882157356,1
-ID,Indonesia,"['instrumentalness', 'tempo', 'is_explicit', 'key', 'mode', 'liveness', 'danceability']",25656,0.1853618370834317,2
-HU,Hungary,"['acousticness', 'key', 'time_signature', 'mode', 'tempo', 'is_explicit', 'liveness']",25658,0.1349940643689168,0
-HN,Honduras,"['tempo', 'key', 'daily_rank', 'speechiness', 'liveness', 'valence', 'is_explicit']",25661,0.1800082965671836,4
-GT,Guatemala,"['tempo', 'speechiness', 'liveness', 'key', 'is_explicit', 'acousticness', 'weekly_movement']",25657,0.1784362966220047,4
-GR,Greece,"['tempo', 'time_signature', 'danceability', 'speechiness', 'is_explicit', 'key', 'mode']",25622,0.1327991208637338,0
-FR,France,"['acousticness', 'instrumentalness', 'valence', 'tempo', 'key', 'is_explicit', 'loudness']",25655,0.1462722713665699,2
-FI,Finland,"['tempo', 'speechiness', 'instrumentalness', 'is_explicit', 'mode', 'liveness', 'key']",25660,0.1722075721758051,4
-ES,Spain,"['liveness', 'speechiness', 'tempo', 'acousticness', 'key', 'is_explicit', 'duration_ms']",25503,0.189795670153594,4
-EG,Egypt,"['instrumentalness', 'tempo', 'key', 'time_signature', 'liveness', 'duration_ms', 'speechiness']",25661,0.2044562040855724,3
-EE,Estonia,"['mode', 'duration_ms', 'liveness', 'danceability', 'speechiness', 'time_signature', 'valence']",25505,0.1562386225756943,1
-EC,Ecuador,"['key', 'time_signature', 'is_explicit', 'tempo', 'daily_rank', 'speechiness', 'daily_movement']",25406,0.1992550088584651,0
+MY,Malaysia,"['time_signature', 'key', 'tempo', 'liveness', 'is_explicit', 'speechiness', 'instrumentalness']",25655,0.2138909423476263,1
+MX,Mexico,"['tempo', 'speechiness', 'acousticness', 'key', 'mode', 'is_explicit', 'weekly_movement']",25606,0.1771451717369549,4
+MA,Morocco,"['speechiness', 'time_signature', 'tempo', 'liveness', 'danceability', 'key', 'weekly_movement']",25405,0.1390429249505989,1
+LV,Latvia,"['speechiness', 'is_explicit', 'danceability', 'time_signature', 'liveness', 'instrumentalness', 'duration_ms']",25412,0.1543559382866411,2
+LU,Luxembourg,"['duration_ms', 'speechiness', 'time_signature', 'is_explicit', 'danceability', 'liveness', 'daily_rank']",24840,0.1602094257493269,2
+LT,Lithuania,"['time_signature', 'liveness', 'is_explicit', 'key', 'mode', 'speechiness', 'duration_ms']",25461,0.1491255837979328,2
+KZ,Kazakhstan,"['duration_ms', 'mode', 'instrumentalness', 'is_explicit', 'liveness', 'speechiness', 'time_signature']",25660,0.1545706345144934,2
+KR,"Korea, Republic of (South Korea)","['is_explicit', 'tempo', 'key', 'instrumentalness', 'time_signature', 'weekly_movement', 'mode']",25586,0.213115133980362,3
+JP,Japan,"['instrumentalness', 'tempo', 'key', 'liveness', 'time_signature', 'mode', 'acousticness']",25638,0.1463370762291965,3
+IT,Italy,"['valence', 'mode', 'instrumentalness', 'acousticness', 'tempo', 'key', 'is_explicit']",25670,0.1568077775581548,3
+IS,Iceland,"['key', 'time_signature', 'liveness', 'tempo', 'instrumentalness', 'danceability', 'speechiness']",25420,0.2093500757423025,1
+IN,India,"['key', 'time_signature', 'mode', 'instrumentalness', 'liveness', 'is_explicit', 'danceability']",25406,0.186008888554368,3
+IL,Israel,"['instrumentalness', 'loudness', 'tempo', 'time_signature', 'liveness', 'key', 'is_explicit']",25616,0.1763178265897332,3
+IE,Ireland,"['is_explicit', 'time_signature', 'speechiness', 'danceability', 'liveness', 'daily_rank', 'mode']",25409,0.1838436882157351,2
+ID,Indonesia,"['instrumentalness', 'tempo', 'is_explicit', 'key', 'mode', 'liveness', 'danceability']",25656,0.185361837083432,3
+HU,Hungary,"['acousticness', 'key', 'time_signature', 'mode', 'tempo', 'is_explicit', 'liveness']",25658,0.1349940643689168,3
+HN,Honduras,"['tempo', 'key', 'daily_rank', 'speechiness', 'liveness', 'valence', 'is_explicit']",25661,0.1800082965671837,4
+GT,Guatemala,"['tempo', 'speechiness', 'liveness', 'key', 'is_explicit', 'acousticness', 'weekly_movement']",25657,0.1784362966220045,4
+GR,Greece,"['tempo', 'time_signature', 'danceability', 'speechiness', 'is_explicit', 'key', 'mode']",25622,0.1327991208637338,1
+FR,France,"['acousticness', 'instrumentalness', 'valence', 'tempo', 'key', 'is_explicit', 'loudness']",25655,0.1462722713665701,3
+FI,Finland,"['tempo', 'speechiness', 'instrumentalness', 'is_explicit', 'mode', 'liveness', 'key']",25660,0.172207572175805,4
+ES,Spain,"['liveness', 'speechiness', 'tempo', 'acousticness', 'key', 'is_explicit', 'duration_ms']",25503,0.1897956701535944,4
+EG,Egypt,"['instrumentalness', 'tempo', 'key', 'time_signature', 'liveness', 'duration_ms', 'speechiness']",25661,0.2044562040855725,1
+EE,Estonia,"['mode', 'duration_ms', 'liveness', 'danceability', 'speechiness', 'time_signature', 'valence']",25505,0.1562386225756938,2
+EC,Ecuador,"['key', 'time_signature', 'is_explicit', 'tempo', 'daily_rank', 'speechiness', 'daily_movement']",25406,0.1992550088584657,1
 DO,Dominican Republic,"['is_explicit', 'tempo', 'mode', 'speechiness', 'valence', 'acousticness', 'duration_ms']",25675,0.1768845842739616,4
-DK,Denmark,"['liveness', 'tempo', 'time_signature', 'instrumentalness', 'is_explicit', 'mode', 'key']",25460,0.1573620469232282,2
-DE,Germany,"['liveness', 'time_signature', 'speechiness', 'instrumentalness', 'duration_ms', 'key', 'valence']",25518,0.1473869277836254,3
-CZ,Czech Republic,"['time_signature', 'tempo', 'key', 'is_explicit', 'duration_ms', 'mode', 'valence']",25661,0.1492160880540746,2
+DK,Denmark,"['liveness', 'tempo', 'time_signature', 'instrumentalness', 'is_explicit', 'mode', 'key']",25460,0.1573620469232283,3
+DE,Germany,"['liveness', 'time_signature', 'speechiness', 'instrumentalness', 'duration_ms', 'key', 'valence']",25518,0.1473869277836253,0
+CZ,Czech Republic,"['time_signature', 'tempo', 'key', 'is_explicit', 'duration_ms', 'mode', 'valence']",25661,0.1492160880540746,3
 CR,Costa Rica,"['tempo', 'key', 'is_explicit', 'mode', 'acousticness', 'danceability', 'speechiness']",25659,0.1832286608443425,4
-CO,Colombia,"['key', 'tempo', 'liveness', 'time_signature', 'acousticness', 'daily_movement', 'duration_ms']",25413,0.1896013947298403,3
-CL,Chile,"['mode', 'key', 'liveness', 'speechiness', 'acousticness', 'is_explicit', 'tempo']",25603,0.1945904964032278,4
-CH,Switzerland,"['is_explicit', 'liveness', 'time_signature', 'speechiness', 'daily_rank', 'danceability', 'key']",25457,0.1731638350593671,1
-CA,Canada,"['duration_ms', 'time_signature', 'liveness', 'key', 'instrumentalness', 'valence', 'speechiness']",25326,0.1769470532050069,3
-BY,Belarus,"['is_explicit', 'valence', 'time_signature', 'instrumentalness', 'key', 'mode', 'acousticness']",25609,0.1573857577446806,2
-BR,Brazil,"['acousticness', 'time_signature', 'danceability', 'loudness', 'instrumentalness', 'tempo', 'is_explicit']",25657,0.1669020641492699,2
-BO,Bolivia,"['tempo', 'mode', 'is_explicit', 'liveness', 'danceability', 'duration_ms', 'key']",25653,0.1857429162983987,3
+CO,Colombia,"['key', 'tempo', 'liveness', 'time_signature', 'acousticness', 'daily_movement', 'duration_ms']",25413,0.1896013947298409,0
+CL,Chile,"['mode', 'key', 'liveness', 'speechiness', 'acousticness', 'is_explicit', 'tempo']",25603,0.194590496403228,4
+CH,Switzerland,"['is_explicit', 'liveness', 'time_signature', 'speechiness', 'daily_rank', 'danceability', 'key']",25457,0.1731638350593667,2
+CA,Canada,"['duration_ms', 'time_signature', 'liveness', 'key', 'instrumentalness', 'valence', 'speechiness']",25326,0.1769470532050069,0
+BY,Belarus,"['is_explicit', 'valence', 'time_signature', 'instrumentalness', 'key', 'mode', 'acousticness']",25609,0.1573857577446805,3
+BR,Brazil,"['acousticness', 'time_signature', 'danceability', 'loudness', 'instrumentalness', 'tempo', 'is_explicit']",25657,0.1669020641492702,3
+BO,Bolivia,"['tempo', 'mode', 'is_explicit', 'liveness', 'danceability', 'duration_ms', 'key']",25653,0.1857429162983987,0
 BG,Bulgaria,"['instrumentalness', 'acousticness', 'tempo', 'speechiness', 'liveness', 'mode', 'duration_ms']",25409,0.1650768716356983,4
-BE,Belgium,"['time_signature', 'liveness', 'key', 'instrumentalness', 'speechiness', 'is_explicit', 'daily_rank']",25644,0.1701494991891618,0
-AU,Australia,"['is_explicit', 'danceability', 'duration_ms', 'time_signature', 'liveness', 'mode', 'valence']",25449,0.1777923877909715,1
-AT,Austria,"['liveness', 'time_signature', 'duration_ms', 'key', 'is_explicit', 'valence', 'tempo']",25509,0.1639556942925116,3
-AR,Argentina,"['duration_ms', 'mode', 'key', 'speechiness', 'liveness', 'tempo', 'daily_movement']",25654,0.1877397752179514,4
-AE,United Arab Emirates,"['liveness', 'key', 'tempo', 'speechiness', 'is_explicit', 'time_signature', 'mode']",25362,0.1764414489639647,0
-GB,United Kingdom,"['is_explicit', 'liveness', 'instrumentalness', 'time_signature', 'mode', 'duration_ms', 'danceability']",20787,0.1710355772126048,1
+BE,Belgium,"['time_signature', 'liveness', 'key', 'instrumentalness', 'speechiness', 'is_explicit', 'daily_rank']",25644,0.1701494991891619,1
+AU,Australia,"['is_explicit', 'danceability', 'duration_ms', 'time_signature', 'liveness', 'mode', 'valence']",25449,0.1777923877909712,2
+AT,Austria,"['liveness', 'time_signature', 'duration_ms', 'key', 'is_explicit', 'valence', 'tempo']",25509,0.1639556942925115,0
+AR,Argentina,"['duration_ms', 'mode', 'key', 'speechiness', 'liveness', 'tempo', 'daily_movement']",25654,0.1877397752179516,4
+AE,United Arab Emirates,"['liveness', 'key', 'tempo', 'speechiness', 'is_explicit', 'time_signature', 'mode']",25362,0.1764414489639646,1
+GB,United Kingdom,"['is_explicit', 'liveness', 'instrumentalness', 'time_signature', 'mode', 'duration_ms', 'danceability']",20787,0.1710355772126043,2

@@ -1,4 +1,5 @@
 "use client";
+
 import * as d3 from "d3";
 import { useEffect, useRef, useState } from "react";
 
@@ -15,8 +16,23 @@ const TimeSeriesChart = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(100); // ms
 
+  // useEffect(() => {
+  //   d3.csv("/data/processed_data.csv", d3.autoType).then((data) => {
+  //     data.forEach((d) => {
+  //       d.date = new Date(d.snapshot_date);
+  //     });
+
+  //     setRawData(data);
+  //     setCountries(Array.from(new Set(data.map((d) => d.country_y))).sort());
+  //     setCountry((prev) => prev || data[0]?.country_y || "");
+  //     setLoading(false);
+  //   });
+  // }, []);
+
+  const csvUrl = process.env.NEXT_PUBLIC_DROPBOX_CSV_URL;
+
   useEffect(() => {
-    d3.csv("/data/processed_data.csv", d3.autoType).then((data) => {
+    d3.csv(csvUrl, d3.autoType).then((data) => {
       data.forEach((d) => {
         d.date = new Date(d.snapshot_date);
       });
@@ -26,7 +42,7 @@ const TimeSeriesChart = () => {
       setCountry((prev) => prev || data[0]?.country_y || "");
       setLoading(false);
     });
-  }, []);
+  }, [csvUrl]);
 
   useEffect(() => {
     if (!isPlaying || !rawData.length || !country) return;

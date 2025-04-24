@@ -44,3 +44,5 @@ next-env.d.ts
 
 public/data/cleaned_spotify_data.csv
 public/data/processed_data.csv
+
+download_logo.py
