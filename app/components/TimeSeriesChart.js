@@ -29,20 +29,28 @@ const TimeSeriesChart = () => {
   //   });
   // }, []);
 
-  const csvUrl = process.env.NEXT_PUBLIC_DROPBOX_CSV_URL;
+  // const csvUrl = process.env.NEXT_PUBLIC_DROPBOX_CSV_URL;
+
+  // useEffect(() => {
+  //   d3.csv(csvUrl, d3.autoType).then((data) => {
+  //     data.forEach((d) => {
+  //       d.date = new Date(d.snapshot_date);
+  //     });
+
+  //     setLoading(false);
+  //   });
+  // }, [csvUrl]);
 
   useEffect(() => {
-    d3.csv(csvUrl, d3.autoType).then((data) => {
-      data.forEach((d) => {
-        d.date = new Date(d.snapshot_date);
-      });
-
+    d3.csv("/api/csv", d3.autoType).then((data) => {
+      data.forEach((d) => (d.date = new Date(d.snapshot_date)));
+      setRawData(data);
       setRawData(data);
       setCountries(Array.from(new Set(data.map((d) => d.country_y))).sort());
       setCountry((prev) => prev || data[0]?.country_y || "");
       setLoading(false);
     });
-  }, [csvUrl]);
+  }, []);
 
   useEffect(() => {
     if (!isPlaying || !rawData.length || !country) return;
