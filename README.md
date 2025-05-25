@@ -27,11 +27,17 @@ By leveraging Spotify's API and integrating various datasets, the project offers
 ├── public/ # Static assets
 
 ├── scripts/ # Data processing scripts
+
 ├── .gitignore # Git ignore file
+
 ├── README.md # Project documentation
+
 ├── next.config.mjs # Next.js configuration
+
 ├── package.json # Project dependencies
+
 ├── tailwind.config.js # Tailwind CSS configuration
+
 └── tsconfig.json # TypeScript configuration
 
 
