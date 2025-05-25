@@ -1,16 +1,65 @@
-Getting Started
+# 🎧 Spotify Visualizer: Exploring Global Music Trends
 
-First, run the development server:
+**Live Demo:** [spotify-vis-dva.vercel.app](https://spotify-vis-dva.vercel.app/)
 
-```bash
-npm install
-npm run dev
-```
+## 📌 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Welcome to Team Mark's "Exploring Global Music Trends" project!  
+This interactive web application visualizes Spotify and country-related data to uncover global music trends.  
+By leveraging Spotify's API and integrating various datasets, the project offers insights into how music preferences vary across different regions.
 
-Welcome to Team Mark's "Exploring Global Music Trends" Project. We will build an interactive application showcasing Spotify and country related data to reveal global music trends. Using a dataset of top Spotify songs by country with features like danceability and popularity and datasets on economic and social factors, we will explore song popularity by country, determine correlations between song characteristics and country data, and cluster similar nations. We intend to create a novel three-tier geographic, and chord chart and heat map visuals. Additionally, we plan to globally display potential popularity (graded choropleth) based on user-selected song characteristics.
+## 🚀 Features
 
-Create .env.local:
+- **Interactive Visualizations**: Engaging charts and graphs that depict music trends globally.
+- **Country-Specific Insights**: Dive deep into music preferences of individual countries.
+- **Responsive Design**: Optimized for various devices to ensure a seamless user experience.
 
-NEXT_PUBLIC_DROPBOX_CSV_URL="https://www.dropbox.com/scl/fi/8d4xlricu84nbus4qv39g/processed_data.csv?rlkey=lzbbbv62tx9zeqr1mxnn3tf2j&st=gpojv7jb&dl=1"
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Data Visualization**: D3.js, Chart.js
+- **Deployment**: Vercel
+
+## 📂 Project Structure
+
+├── app/ # Main application components
+├── public/ # Static assets
+├── scripts/ # Data processing scripts
+├── .gitignore # Git ignore file
+├── README.md # Project documentation
+├── next.config.mjs # Next.js configuration
+├── package.json # Project dependencies
+├── tailwind.config.js # Tailwind CSS configuration
+└── tsconfig.json # TypeScript configuration
+
+
+## ⚙️ Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/tvermani13/spotify-vis-dva.git
+   cd spotify-vis-dva
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+4. **Open your browser:**
+
+  Navigate to http://localhost:3000 to view the application.
+
+## 📈 Data Sources
+Spotify API: Provides real-time music data.
+Country Datasets: Includes demographic and cultural information to contextualize music trends.
+
+## 👨‍💻 Authors
+Team Mark — A group of passionate developers aiming to visualize global music trends.
+
+
+
