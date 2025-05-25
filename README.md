@@ -23,7 +23,9 @@ By leveraging Spotify's API and integrating various datasets, the project offers
 ## 📂 Project Structure
 
 ├── app/ # Main application components
+
 ├── public/ # Static assets
+
 ├── scripts/ # Data processing scripts
 ├── .gitignore # Git ignore file
 ├── README.md # Project documentation
